@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Ling's cars Redesign</title>
+</head>
+
+<body>
+    <!-- Reference: image slider & banner modified from  https://github.com/devression/product-slider -->
+    <div class="banner">
+        <div class="navbar">
+            <img src="./images/lingscars-logo.png" alt="lings cars logo" class="logo">
+
+            <ul class="nav-list">
+                <li><a href="#">Finding Problems</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Visual Redesign</a></li>
+                <li><a href="#">Responsive Redesign</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>RESPONSIVE REDESIGN</h1>
+            <p> CSCI 1300 </p>
+            <p><a href="https://www.lingscars.com/">LINGsCARS before redesign (clickable) </a></p>
+            <a href="LingsCar-Redesign/index.html">LINGsCARS after redesign (clickable) </a>
+        </div>
+    </div>
+
+    <section class="product">
+        <h2 class="h2-category">Part 1: Identifying Usability Problem</h2>
+
+        <h3 class="h3-category">1.1 Picking a Web Page</h3>
+        <div class="screenshot">
+            <img src="images/lings-screenshot.png" class="image" alt="LingsCars screenshot">
+            <div class="text"> 
+                <p> Although being ugly is one of its special features and making the website ‘attractive’,  
+                the overly crowded text, the overly colorful layout and the overused animation is very overwhelming 
+                for both new users and old users.
+                </p>
+            </div>
+        </div>
+        
+        <div class="after-image">
+            <h3 class="h3-category">1.2 Finding Problems</h3>
+        </div>
+        <h4 class="h4-category">1.2.1 Mental v.s. Conceptual model</h4>
+        <div class="screenshot">
+            <div class="left-text"> 
+                <h5 class="h5-category">Mental Model:</h5>
+                <p> When entering lingsCars trying to rent a car, people would mostly think of:
+                </p>
+                <ol class="ol-inline">
+                    <li>Look at the menu</li>
+                    <li>Choose the car brand they like or directly click on the specific car they are interested in to see the detail</li>
+                    <li>In the detail session, they would like to see the price and the related contract</li>
+                    <li>Check the review & the information contact of LingsCars</li>
+                </ol>
+            </div>
+            <div class="right-text"> 
+                <h5 class="h5-category">Conceptual model:</h5>
+                <p> The conceptual model that this website provides is:
+                </p>
+                <ol class="ol-inline">
+                    <li>Provide a large banner which leads to the car list</li>
+                    <li>Show the menu</li>
+                    <li>Provide the car brand</li>
+                    <li>Show the contact information</li>
+                </ol>
+            </div>
+        </div>
+        <h4 class="h4-category">1.2.2 Usability & Efficiency</h4>
+        <div class="screenshot">
+            <div class="normal-text">
+                <ol>
+                    <li>Low image-font color contrast</li>
+                    <li>Hard for both new users and old users to spot important information and quickly perform the operation they want</li>
+                    <li>Many photos have the same alt text, which cannot provide much information if the image is not showing</li>
+                    <li>The large empty white region in the bottom </li>
+                </ol>
+            </div>
+        </div>
+
+        <h4 class="h4-category">1.2.3 Memorability</h4>
+        <div class="screenshot">
+            <div class="normal-text">
+                <p>Although the website provides many affordances with the usage of icons, it is still hard to recall how to do a single operation. 
+                    Say, the user wants to rent a car, after they click the “order now” icon, it is hard to tell what should be done next. </p>
+            </div>
+        </div>
+
+        <h4 class="h4-category">1.2.4 Learnability</h4>
+        <div class="screenshot">
+            <div class="normal-text">
+                <p>Although the website provides many affordances with the usage of icons, it is still hard to learn for new users. 
+                The overly colorful page and overly crowded icons are just so distracting.
+                </p>
+            </div>
+        </div>
+
+        <h3 class="h3-category">1.3 Accessibility</h3>
+        <h4 class="h4-category"><a href="https://wave.webaim.org/report#/https://www.lingscars.com/">WebAIM WAVE Report</a></h4>
+        <div class="screenshot">
+            <div class="left-text"> 
+                <h5 class="h5-category">Accessibility findings: </a></h5>
+                <p>
+                    The website’s main problem is it has many (46) contrast errors and the heading hierarchy/structure  is very unclear. There are many redundant and small texts which are not easily recognizable. WAVE also finds that a nearby image contained in the website has the same alternative text, 
+                    which cannot provide hints for the users of what the image is about if the image is not showing.
+                </p>
+            </div>
+            <div class="right-text"> 
+                <h5 class="h5-category">My personal opinion: </a></h5>
+                <p>
+                    I agree with the WAVE’s opinion that the website has  many contrast errors, the overly colorful page makes it hard for users to find something they are looking for efficiently. Although there are some icons which support affordance, it is still not that distinguishable. The page hierarchy is not clear enough. 
+                    Many description texts are redundant. Also, the website seems to use  too many LING’s portraits and memes.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="product">
+        <h2 class="h2-category">Part 2: Visual Redesign</h2>
+        <h3 class="h3-category">2.1 Low-fidelity Wireframing</h3>
+        <div class="screenshot">
+            <img src="images/low-fi/phone.png" class="iphone" alt="low-fidelity phone version">
+            <div class="text"> 
+                <p> 
+                    <- phone design
+                </p>
+            </div>
+        </div>
+        <div class="screenshot">
+            <div class="ipad-text"> 
+                <p> 
+                    ipad design ->
+                </p>
+            </div>
+            <img src="images/low-fi/ipad.png" class="ipad" alt="low-fidelity ipad version">
+        </div>
+        <div class="screenshot">
+            <img src="images/low-fi/pc.png" class="pc" alt="low-fidelity PC version">
+            <div class="pc-text"> 
+                <p> 
+                   <- pc design
+                </p>
+            </div>
+        </div>
+
+        <h3 class="h3-category">2.2 Visual Design Style Guide</h3>
+        <div class="screenshot">
+            <img src="images/Visual Design.png"class="visual-design" alt="Visual Design Style Guide">
+        </div>
+     
+        <h3 class="h3-category">2.3 High-Fidelity Prototyping</h3>
+        <h4 class="h4-category">Warning: the high-fedelity prototyping image takes a while to show up/load completely as the size of it is too big!</h4>
+        <div class="screenshot">
+            <img src="images/high-fi/phone.png" class="hi-iphone" alt="high-fidelity phone version">
+            <div class="text"> 
+                <p> 
+                    <- phone design
+                </p>
+            </div>
+        </div>
+        <div class="screenshot">
+            <div class="ipad-text"> 
+                <p> 
+                    ipad design ->
+                </p>
+            </div>
+            <img src="images/high-fi/ipad.png" class="hi-ipad" alt="high-fidelity ipad version">
+        </div>
+        <div class="screenshot">
+            <img src="images/high-fi/pc.png" class="high-pc" alt="high-fidelity PC version">
+            <div class="pc-text"> 
+                <p> 
+                   <- pc design 
+                </p>
+            </div>
+        </div>
+
+        <h4 class="h4-category">Annotations:</h4>
+        <div class="screenshot">
+            <div class="normal-text">
+                <h5 class="h5-category">Low-fidelity</h5>
+                <ol>
+                    <li>
+                        <h5 class="h5-category">Card Brand Logo Display and White Blank at the bottom issue</a></h5>
+                        <p>To solve the "card brand logo display" not distinguishable problem, I use an image slider and put the car brand logo alphabetically.
+
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+            
+            <div class="normal-text">
+                <h5 class="h5-category">High-fidelity</h5>
+                <ol>
+                    <li>
+                        <h5 class="h5-category">Card Brand Logo Display and White Blank at the bottom issue</a></h5>
+                        <p>To solve the "card brand logo display" not distinguishable problem, I use an image slider and put the car brand logo alphabetically.
+
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+
+        </div>
+
+        
+     
+        
+        
+    </section>
+
+    <section class="product">
+        <h2 class="h2-category">Part 3: Responsive Redesign</h2>
+        <div  class="redesign">
+            <ul class="link">
+                <p><a href="https://www.lingscars.com/">LINGsCARS before redesign (clickable) </a></p>
+                <p><a href="LingsCar-Redesign/index.html">LINGsCARS after redesign (clickable) </a></p>
+                <footer class="footer-container">
+                    "Made with"
+                    <font color="hotpink">♥</font>
+                    " by happydoggie666"
+                </footer>
+            </ul>
+            
+        </div>
+    </section>
+
+
+    
+
+    
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">TOP</button>
+
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
