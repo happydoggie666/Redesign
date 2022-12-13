@@ -425,6 +425,14 @@
   margin-bottom:2%;
 }
 
+.text-intro{
+  float:left;
+  margin-left:12%;
+  margin-top:3%;
+  margin-bottom:2%;
+  font-size:12pt;
+}
+
 
 .collection-container {
   width: 100%;
@@ -579,6 +587,13 @@ Reference tutorial: https://www.youtube.com/watch?v=OAPRagDr4pU*/
   margin-top:20px;
 }
 
+.footer-icon-container{
+  float:right;
+  /* justify-content: center;
+  align-items:center; */
+  padding: 10px;
+  margin-top:20px;
+}
 
 
 /* modified from https://www.w3schools.com/HOWTO/howto_js_scroll_to_top.asp */
@@ -606,4 +621,6 @@ Reference tutorial: https://www.youtube.com/watch?v=OAPRagDr4pU*/
 html{
   overflow-x:hidden;
 }
+
+
 
